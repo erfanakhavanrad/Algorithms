@@ -1,9 +1,8 @@
-import joma.JomaAlgorithms;
+package joma;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.util.Arrays;
 
 /**
  * @author Erfan Akhavan Rad
@@ -29,6 +28,12 @@ public class JomaAlgorithmsTest {
         int[] employeesBonuses = {1, 2, 3, 1, 2, 3, 1};
         int[] results = jomaAlgorithms.distributeBonuses(employeesPerformance);
         Assert.assertArrayEquals(employeesBonuses, results);
+    }
+
+    @Test
+    public void swapEveryTwoNodesTest(){
+        jomaAlgorithms.swapEveryTwoNodes();
+//[2, 1, 4, 3, 5]
     }
 
 }
